@@ -16,13 +16,19 @@ ul {
   list-style: none;
 }
 
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 body {
   background-color: var(--body-bg-color);
   margin: 40px;
   font-family: "Merriweather", sans-serif;
 
-display: flex;
-
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 header {
@@ -188,15 +194,12 @@ header .card-experiences ul {
   line-height: 18px;
 
   padding: 0 40px;
-
-
 }
 
-header .card-experiences ul li h1{
+header .card-experiences ul li h1 {
   font-weight: 700;
   font-size: 14px;
 }
-
 
 header .card-education {
   width: 348px;
@@ -228,12 +231,153 @@ header .card-education ul {
   line-height: 18px;
 
   padding: 0 40px;
-  
 }
 
-header .card-education ul li h1{
+header .card-education ul li h1 {
   font-weight: 700;
   font-size: 14px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  color: var(--text-color);
+}
+
+main .container {
+  padding: 0 40px;
+}
+main .my-projects {
+  width: 952px;
+  height: 86px;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+main .my-projects > p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+main .my-repositorys {
+  display: flex;
+  margin: 30px auto;
+  gap: 40px;
+}
+
+main .my-portfolio {
+  width: 461px;
+  height: 186px;
+  background-color: var(--bg-cards);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 20px;
+  padding: 30px;
+}
+
+main .my-portfolio > a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+main .my-portfolio > a > p {
+  font-size: 16px;
+}
+
+main .my-portfolio p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+main .my-portfolio .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .my-portfolio .social .likeded {
+  display: flex;
+  gap: 16px;
+}
+
+main .my-portfolio .social .likeded a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+main .my-portfolio .social .language {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+main .recent-post {
+  width: 952px;
+  height: 86px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  padding: 30px;
+
+  margin: 30px auto;
+}
+
+main .recent-post > p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+main .my-posts {
+  width: 952px;
+  height: 201px;
+
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 42px 30px ; 
+
+  gap: 20px;
+}
+
+main .my-posts img {
+  width: 128px;
+  height: 128px;
+
+  border-radius: 50%;
+}
+
+main .my-posts .content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+main .my-posts .tags-post {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+main .my-posts section {
+  line-height: 30px;
+}
