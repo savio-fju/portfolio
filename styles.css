@@ -23,11 +23,12 @@ a {
 
 body {
   background-color: var(--body-bg-color);
-  margin: 40px;
+  margin: auto;
+  padding: 40px;
   font-family: "Merriweather", sans-serif;
 
   display: flex;
-  gap: 20px;
+  gap: 60px;
   justify-content: center;
 }
 
@@ -51,6 +52,8 @@ header .card-profile {
   padding: 32px;
   transition: transform 0.4s;
   cursor: pointer;
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 header .card-profile img {
@@ -93,7 +96,8 @@ header .card-links {
   border-radius: 20px;
   padding: 30px 40px;
   transition: transform 0.4s;
-  cursor: pointer;
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 header .card-links ul {
   display: flex;
@@ -129,9 +133,10 @@ header .card-tech {
   padding: 30px;
   gap: 20px;
   transition: transform 0.4s;
-  cursor: pointer;
 
   color: var(--text-color);
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 header .card-tech:hover {
@@ -177,9 +182,9 @@ header .card-experiences {
   padding: 30px;
   gap: 20px;
   transition: transform 0.4s;
-  cursor: pointer;
 
   color: var(--text-color);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 header .card-experiences:hover {
@@ -214,9 +219,10 @@ header .card-education {
   padding: 30px;
   gap: 20px;
   transition: transform 0.4s;
-  cursor: pointer;
 
-  color: var(--text-color);
+  color: var(--text-color);box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+
 }
 
 header .card-education:hover {
@@ -247,7 +253,11 @@ main {
 }
 
 main .container {
-  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 30px;
 }
 main .my-projects {
   width: 952px;
@@ -259,6 +269,13 @@ main .my-projects {
   background-color: var(--bg-cards);
   border-radius: 20px;
   padding: 30px;
+
+  transition: transform 0.4s;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+main .my-projects:hover {
+  transform: scale(1.1);
 }
 
 main .my-projects > p {
@@ -268,8 +285,12 @@ main .my-projects > p {
 
 main .my-repositorys {
   display: flex;
-  margin: 30px auto;
-  gap: 40px;
+  gap: 30px;
+  transition: transform 0.4s;
+}
+
+main .my-repositorys:hover {
+  transform: scale(1.1);
 }
 
 main .my-portfolio {
@@ -283,6 +304,7 @@ main .my-portfolio {
 
   border-radius: 20px;
   padding: 30px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 main .my-portfolio > a {
@@ -334,8 +356,12 @@ main .recent-post {
   background-color: var(--bg-cards);
   border-radius: 20px;
   padding: 30px;
+  transition: transform 0.4s;
 
-  margin: 30px auto;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+main .recent-post:hover {
+  transform: scale(1.1);
 }
 
 main .recent-post > p {
@@ -353,9 +379,17 @@ main .my-posts {
   display: flex;
   align-items: center;
 
-  padding: 42px 30px ; 
+  padding: 42px 30px;
 
   gap: 20px;
+
+  transition: transform 0.4s;
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+main .my-posts:hover {
+  transform: scale(1.1);
 }
 
 main .my-posts img {
@@ -363,6 +397,7 @@ main .my-posts img {
   height: 128px;
 
   border-radius: 50%;
+  
 }
 
 main .my-posts .content {
